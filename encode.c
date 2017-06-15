@@ -7,6 +7,7 @@
 # define NIL (void *) 0
 
 //main function declarations
+void printGreeting();
 bool scanInput();
 bool handleArgs(int, char **, char **, char**);
 bool verifyFilenames(char *, char **);
@@ -15,6 +16,8 @@ int main(int argc, char **argv)
 {
     char *infile = NIL;
     char *outfile = NIL;
+
+    printGreeting();
 
     // get user's input file name
     if (!scanInput(&infile, &outfile)){ return 1;};
