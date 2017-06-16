@@ -32,19 +32,23 @@ int main(int argc, char **argv)
 }
 
 
-
+/**
+ * prints out a cute little message with
+ * a little ascii art
+ */
 void printGreeting()
 {
-    printf("Welcome to Cory's file compressor!\n");
-    printf("made   with   love");
-    printf("\n\
-      *   *\n\
-    *********\n\
-     *******\n\
-       ***\n\
-        *\n");
+    printf("Welcome to\n\
+                ******     *****     ******   ***  *** \n\
+              ****   **   ***   **  ***   ***  **  **  \n\
+              ***         ***   *   ***   **    ***    \n\
+              ***         ***   **  *** ***     ***     \n\
+              ****   **   ***   **  ***   **    ***     \n\
+                ******     *****    ***   **    ***   's\n\
+                                                          file compressor\n");
 
 }
+
 /**
  * get filenames from scanning ather than
  * from command line arguments
